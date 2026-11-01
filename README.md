@@ -1,10 +1,11 @@
 # SQL-Data-Analysist-Task-2
 Student Management Database: Courses &amp; Enrollments Analysis
-Overview
+
+**Overview**
 
 This project extends the Student Management Database built in Task 1 by adding two new tables, courses and enrollments. It then uses SQL joins, GROUP BY and aggregate functions to analyse student performance by course and to find insights such as the top students and the number of students who failed.
 
-Objectives
+**Objectives**
 Extend the existing database with courses and enrollments tables.
 Model a one-to-many relationship: one student can enrol in many courses.
 Practise JOIN, GROUP BY, AVG, COUNT, ORDER BY and LIMIT.
@@ -21,7 +22,7 @@ students (1) ────< enrollments >──── (1) courses
 
 enrollments is the link table between students and courses.
 
-Sample Data
+**Sample Data**
 Courses: Mathematics, Science, English, Computer Science.
 Enrollments: each student's Math, Science and English grades come from the Task 1 scores. Computer Science grades for 8 students are added sample data, including two below 40 so that the failure query returns results.
 Queries
@@ -30,7 +31,7 @@ Queries
 2	Find the average grade per course	JOIN, GROUP BY, AVG
 3	Find the top 3 students overall	JOIN, GROUP BY, ORDER BY ... DESC, LIMIT
 4	Count students who failed (grade < 40)	WHERE, COUNT(DISTINCT ...)
-Query examples
+**Query examples**
 sql
 -- Average grade per course
 SELECT c.name AS course_name,
